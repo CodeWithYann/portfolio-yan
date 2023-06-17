@@ -1,0 +1,95 @@
+.rodape {
+    background: #3b3b3b;
+    color: #ffffff;
+    padding: 50px;
+}
+
+.rodape-conteudo {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.rodape-texto {
+    font-size: 2rem;
+    line-height: 1.2;
+    max-width: 40ch;
+}
+
+.rodape-link {
+    display: Grid;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    gap: 40px;
+}
+
+.rodape-link a {
+    color: #22be02;
+}
+
+.rodape-copy {
+    color: #c5c5c5fb;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    max-width: 30ch;
+}
+
+@media (max-width: 800px) {
+    .rodape-conteudo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .rodape {
+        padding: 20px;
+    }
+
+    .rodape-conteudo {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .rodape-texto {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        max-width: 40ch;
+    }
+
+    .rodape-link {
+        display: Grid;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        color: #ffffff;
+        text-transform: uppercase;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    .rodape-texto {
+        font-size: 1.4rem;
+        line-height: 1.2;
+        max-width: 40ch;
+    }
+
+    .rodape-link {
+        display: Grid;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        color: #ffffff;
+        text-transform: uppercase;
+        gap: 40px;
+    }
+}
+

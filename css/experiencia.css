@@ -1,0 +1,114 @@
+.experiencia {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+
+.experiencia .subtitulo {
+    color: rgb(187, 187, 187);
+}
+
+.experiencia-texto {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    max-width: 40ch;
+    margin-bottom: 60px;
+}
+
+.experiencia-texto strong {
+    color: #00910c;
+}
+
+.empresa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background: #c5c5c542;
+    margin-bottom: 40px;
+    border-radius: 6px;
+    position: relative;
+    gap: 10px 20px;
+}
+
+.empresa::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#01ff16, #137400);
+    position: absolute;
+    top: 20px;
+    left: -4px;
+
+}
+
+.empresa-ano {
+    position: absolute;
+    top: 22px;
+    left: -100px;
+    color: #000000;
+}
+
+.empresa-titulo {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+.empresa-habilidade {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 25px;
+    align-content: center;
+    text-transform: upp;
+}
+
+.empresa-habilidade li {
+    font-size: .875rem;
+    line-height: .875rem;
+    padding: 10px;
+    background: linear-gradient( #14860a, #017915);
+    border-radius: 5px;
+    color: #ffffff;
+
+}
+
+@media (max-width: 700px) {
+    .experiencia {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+   }
+
+    .experiencia-texto {
+        font-size: 1.2rem;
+        line-height: 1.2;
+        max-width: 60ch;
+        margin-bottom: 40px;
+    }
+    .experiencia .subtitulo {
+        color: rgb(187, 187, 187);
+        font-size: 5rem;
+    }
+
+    .empresa-ano {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .experiencia .subtitulo {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .experiencia .subtitulo {
+        font-size: 3rem;
+    }
+}

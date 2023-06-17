@@ -1,0 +1,251 @@
+.habilidades {
+    padding: 100px;
+    color: #f1f1f1;
+    position: relative;
+    background: #030202;
+
+}
+
+.habilidades-container {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+
+.habilidades .subtitulo {
+    color: #312f2f;
+    max-width: 6ch;
+}
+
+.habilidades-texto {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    max-width: 40ch;
+    margin-bottom: 60px;
+}
+
+.habilidades-lista {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.lista {
+    background: #2d312e;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.habilidades-cargo {
+    font-size: 1rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 20px;
+    color: #c4c4c467;
+
+}
+
+.habilidade-curso {
+    position: relative;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.habilidade-plataforma {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    margin: 20px;
+}
+
+.habilidade-curso::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#01ff16, #137400);
+    position: absolute;
+    left: -24px
+}
+
+.habilidades-interpessoais {
+    display: grid;
+    gap: 20px;
+    position: relative;
+}
+
+.habilidades-interpessoais h3 {
+    font-size: 1, 5rem;
+    line-height: .875rem;
+    color: #ffffff67;
+    font-weight: bold;
+}
+
+.habilidades-interpessoais-li {
+    display: grid;
+    gap: 5px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #ffffff;
+}
+
+.habilidades-interpessoais::before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: url(../img/cursos.svg) no-repeat center center;
+    position: absolute;
+    left: -30px;
+    top: -5px;
+}
+
+.idioma {
+    display: grid;
+    gap: 20px;
+    position: relative;
+}
+
+.idioma h3 {
+    font-size: 1, 5rem;
+    line-height: .875rem;
+    color: #ffffff67;
+    font-weight: bold;
+}
+
+.idioma li {
+    display: flex;
+    gap: 5px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #ffffff;
+}
+
+.idioma::before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: url(../img/idiomas.svg) no-repeat center center;
+    position: absolute;
+    left: -30px;
+    top: -5px;
+}
+
+.idioma-li span {
+    color: #22be02;
+}
+
+.habilidades h2::after {
+    content: '';
+    width: 128px;
+    height: 128px;
+    display: block;
+    background: url(/img/detalhe.svg) no-repeat center center;
+    position: absolute;
+    bottom: -50px;
+}
+
+@media (max-width: 900px) {
+    .habilidades {
+        padding: 40px 20px;
+    }
+
+    .habilidades-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 40px 20px;
+        margin: 0 auto;
+        gap: 100px;
+    }
+
+    .habilidades .subtitulo {
+        color: #312f2f;
+        max-width: 5ch;
+        font-size: 4rem;
+    }
+
+    @media (max-width: 800px) {
+
+        .habilidades-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 100px;
+        }
+
+
+        .habilidades .subtitulo {
+            color: #312f2f;
+            max-width: 4ch;
+            font-size: 5rem;
+        }
+
+        .habilidades-lista {
+            display: grid;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .habilidades-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px;
+}
+
+.habilidades .subtitulo {
+    font-size: 3rem;
+}
+
+.habilidades-texto {
+    font-size: 1rem;
+    line-height: 1.2;
+    max-width: 40ch;
+    margin-bottom: 30px;
+}
+
+}
+
+@media (max-width: 600px) {
+
+    .habilidades-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding: 40px 20px;
+        margin: 0 auto;
+    }
+    .habilidades-container {
+        gap: 50px;
+    }
+
+    .habilidades .subtitulo {
+        color: #312f2f;
+        max-width: 3ch;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .habilidades .subtitulo {
+        font-size: 2.2rem;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .habilidades .subtitulo {
+        font-size: 1.9rem;
+    }
+}
